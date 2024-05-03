@@ -45,40 +45,20 @@ class TimePlannerTask extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Positioned(
-      top: ((config.cellHeight! * (dateTime.hour - config.startHour)) +
-              ((dateTime.minutes * config.cellHeight!) / 60))
-          .toDouble(),
-      left: config.cellWidth! * dateTime.day.toDouble() + (leftSpace ?? 0.0),
-      child: SizedBox(
-        width: widthTask,
-        child: Padding(
-          padding:
-              EdgeInsets.only(left: config.horizontalTaskPadding!.toDouble()),
-          child: Material(
-            elevation: 3,
-            borderRadius: config.borderRadius,
-            child: Stack(
-              children: [
-                InkWell(
-                  onTap: onTap as void Function()? ?? () {},
-                  child: Container(
-                    height: ((minutesDuration.toDouble() * config.cellHeight!) /
-                        60), //60 minutes
-                    width: (config.cellWidth!.toDouble() * (daysDuration ?? 1)),
-                    // (daysDuration! >= 1 ? daysDuration! : 1)),
-                    decoration: BoxDecoration(
-                        borderRadius: config.borderRadius,
-                        color: color ?? Theme.of(context).primaryColor),
-                    child: Center(
-                      child: child,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(4),
+         gradient: const LinearGradient(
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+          colors: [
+             Color(0xFF0050FF),
+             Color(0xFF00FF00),
+          ],
         ),
+      ),
+      child: Column(
+        children: [Text('8:00 - 9:00')],
       ),
     );
   }
