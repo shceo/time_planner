@@ -83,7 +83,6 @@ class _TimePlannerState extends State<TimePlanner> {
     style.showScrollBar = widget.style?.showScrollBar ?? false;
     style.interstitialOddColor = widget.style?.interstitialOddColor;
     style.interstitialEvenColor = widget.style?.interstitialEvenColor;
-    style.startColor = widget.style?.startColor;
   }
 
   /// store input data to static values
@@ -171,11 +170,6 @@ class _TimePlannerState extends State<TimePlanner> {
               height: 1,
               color: style.dividerColor ?? Theme.of(context).primaryColor,
             ),
-            Container(
-              height: 68,
-              width: 3,
-              color: style.startColor ?? Theme.of(context).primaryColor,
-            ),
             Expanded(
               child: Row(
                 mainAxisSize: MainAxisSize.min,
@@ -218,12 +212,6 @@ class _TimePlannerState extends State<TimePlanner> {
                             color: style.dividerColor ??
                                 Theme.of(context).primaryColor,
                           ),
-                          //   Container(
-                          //   height: (config.cellWidth + ),
-                          //   width: 3,
-                          //   color: style.startColor ??
-                          //       Theme.of(context).primaryColor,
-                          // ),
                         ],
                       ),
                     ),
