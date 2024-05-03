@@ -30,12 +30,16 @@ class TimePlannerTask extends StatelessWidget {
   /// parameter to set width of task, to set it: (config.cellWidth!.toDouble() * (daysDuration ?? 1)) -config.horizontalTaskPadding!
   final double? widthTask;
 
+  ///  eventItemBackgroundColors;
+  final List<Color>? eventItemBackgroundColors;
+
   /// Widget that show on time planner as the tasks
   const TimePlannerTask(
       {Key? key,
       required this.minutesDuration,
       required this.dateTime,
       this.daysDuration,
+      this.eventItemBackgroundColors,
       this.color,
       this.onTap,
       this.child,
@@ -48,12 +52,12 @@ class TimePlannerTask extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(4),
-         gradient: const LinearGradient(
+        gradient: const LinearGradient(
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
           colors: [
-             Color(0xFF0050FF),
-             Color(0xFF00FF00),
+            Color(0xFF0050FF),
+            Color(0xFF00FF00),
           ],
         ),
       ),
