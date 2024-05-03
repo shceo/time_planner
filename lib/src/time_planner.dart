@@ -33,7 +33,6 @@ class TimePlanner extends StatefulWidget {
   //Whether the time is displayed on the axis of the tim or on the center of the timeblock. Default is false.
   final bool setTimeOnAxis;
 
-
   /// Time planner widget
   const TimePlanner({
     Key? key,
@@ -172,6 +171,11 @@ class _TimePlannerState extends State<TimePlanner> {
               height: 1,
               color: style.dividerColor ?? Theme.of(context).primaryColor,
             ),
+            Container(
+              height: 68,
+              width: 3,
+              color: style.startColor ?? Theme.of(context).primaryColor,
+            ),
             Expanded(
               child: Row(
                 mainAxisSize: MainAxisSize.min,
@@ -214,6 +218,12 @@ class _TimePlannerState extends State<TimePlanner> {
                             color: style.dividerColor ??
                                 Theme.of(context).primaryColor,
                           ),
+                          //   Container(
+                          //   height: (config.cellWidth + ),
+                          //   width: 3,
+                          //   color: style.startColor ??
+                          //       Theme.of(context).primaryColor,
+                          // ),
                         ],
                       ),
                     ),
