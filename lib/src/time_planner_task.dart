@@ -34,47 +34,45 @@ class TimePlannerTask extends StatelessWidget {
   final List<Color>? eventItemBackgroundColors;
 
   /// Widget that show on time planner as the tasks
-  const TimePlannerTask(
-      {Key? key,
-      required this.minutesDuration,
-      required this.dateTime,
-      this.daysDuration,
-      this.eventItemBackgroundColors,
-      this.color,
-      this.onTap,
-      this.child,
-      this.leftSpace,
-      this.widthTask})
-      : super(key: key);
+  const TimePlannerTask({
+    Key? key,
+    required this.minutesDuration,
+    required this.dateTime,
+    this.daysDuration,
+    this.eventItemBackgroundColors,
+    this.color,
+    this.onTap,
+    this.child,
+    this.leftSpace,
+    this.widthTask,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Container(
-          height: 68,
-          width: 143,
-          padding: EdgeInsets.all(16),
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(4), color: Color(0xFF16B364).withOpacity(0.2)),
-          child: Column(
-            children: [Text('8:00 - 9:00')],
-          ),
-        ),
-        Positioned(
-          // top: 0,
-          // left: 0,
-          child: Container(
+    return Container(
+      width: widthTask,
+      height: 68,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(4),
+        color: Color(0xFF16B364).withOpacity(0.2),
+        border: Border(
+          left: BorderSide(
+            color: Color(0xFF16B364),
             width: 3,
-            
-            height: 68,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(4),
-              color: Color(0xFF16B364)
-            ),
           ),
         ),
-      ],
+      ),
+      child: Padding(
+        padding: EdgeInsets.all(16),
+        child: Column(
+          children: [
+            Text(
+              '8:00 - 9:00',
+              style: TextStyle(fontSize: 12),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
