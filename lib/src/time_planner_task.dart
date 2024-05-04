@@ -92,10 +92,10 @@ class TimePlannerTask extends StatelessWidget {
         ),
       ),
       child: Padding(
-        padding: const EdgeInsets.only(top: 4, left: 6),
+        padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
-
+crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               titleText ?? '',
