@@ -37,7 +37,13 @@ class TimePlannerTask extends StatelessWidget {
   final List<Color>? borderColor;
 
   /// Text style for the titles
-  final TextStyle titlesStyle;
+  final TextStyle titleStyle;
+
+  /// Text style for the t
+  final TextStyle subTitleStyle;
+
+  /// Text style for the t
+  final TextStyle thirdTitleStyle;
 
   /// Title text
   final String? titleText;
@@ -58,7 +64,9 @@ class TimePlannerTask extends StatelessWidget {
     required this.titleText,
     required this.thirdSubtitleText,
     required this.subtitleText,
-    required this.titlesStyle,
+    required this.titleStyle,
+    required this.subTitleStyle,
+    required this.thirdTitleStyle,
     this.color,
     this.onTap,
     this.child,
@@ -84,23 +92,26 @@ class TimePlannerTask extends StatelessWidget {
       ),
       child: Padding(
         padding: const EdgeInsets.all(16),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              titleText ?? '',
-              style: titlesStyle,
-            ),
-            Text(
-              subtitleText ?? '',
-              style: titlesStyle,
-            ),
-            Text(
-              thirdSubtitleText ?? '',
-              style: titlesStyle,
-            ),
-          ],
+        child: Align(
+          alignment: Alignment.topLeft,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                titleText ?? '',
+                style: titleStyle,
+              ),
+              Text(
+                subtitleText ?? '',
+                style: subTitleStyle,
+              ),
+              Text(
+                thirdSubtitleText ?? '',
+                style: thirdTitleStyle,
+              ),
+            ],
+          ),
         ),
       ),
     );

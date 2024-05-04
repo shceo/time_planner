@@ -58,7 +58,6 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       tasks.add(
         TimePlannerTask(
-          color: colors[Random().nextInt(colors.length)],
           dateTime: TimePlannerDateTime(
               day: Random().nextInt(14),
               hour: Random().nextInt(18) + 6,
@@ -73,6 +72,15 @@ class _MyHomePageState extends State<MyHomePage> {
             'this is a demo',
             style: TextStyle(color: Colors.grey[350], fontSize: 12),
           ),
+          eventItemBackgroundColors: [],
+          borderColor: [],
+          titleText: '',
+          subtitleText: '',
+          thirdSubtitleText: '',
+          titleStyle: TextStyle(),
+          subTitleStyle: TextStyle(),
+          thirdTitleStyle: TextStyle(),
+
         ),
       );
     });
