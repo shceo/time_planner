@@ -56,17 +56,18 @@ class TimePlannerTask extends StatelessWidget {
           width: 143,
           padding: EdgeInsets.all(16),
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(4), color: Color(0xFF16B364).withOpacity(0.1)),
+              borderRadius: BorderRadius.circular(4), color: Color(0xFF16B364).withOpacity(0.2)),
           child: Column(
             children: [Text('8:00 - 9:00')],
           ),
         ),
         Positioned(
-          top: 0,
-          left: 0,
+          // top: 0,
+          // left: 0,
           child: Container(
             width: 3,
-            height: double.infinity,
+            
+            height: 68,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(4),
               color: Color(0xFF16B364)
