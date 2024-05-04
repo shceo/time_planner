@@ -52,18 +52,20 @@ class TimePlannerTask extends StatelessWidget {
     return Stack(
       children: [
         Container(
+          height: 68,
+          width: 143,
           padding: EdgeInsets.all(16),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(4),
-            gradient: const LinearGradient(
-              begin: Alignment.centerLeft,
-              end: Alignment.centerRight,
-              colors: [
-                Color(0xFF0050FF),
-                Color(0xFF00FF00),
-              ],
-            ),
-          ),
+              borderRadius: BorderRadius.circular(4), color: Color(0xFF16B364)
+              // gradient: const LinearGradient(
+              //   begin: Alignment.centerLeft,
+              //   end: Alignment.centerRight,
+              //   colors: [
+              //     Color(0xFF0050FF),
+              //     Color(0xFF00FF00),
+              //   ],
+              // ),
+              ),
           child: Column(
             children: [Text('8:00 - 9:00')],
           ),
@@ -76,7 +78,10 @@ class TimePlannerTask extends StatelessWidget {
             height: double.infinity,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(4),
-              color: eventItemBackgroundColors != null && eventItemBackgroundColors!.isNotEmpty ? eventItemBackgroundColors![0] : Colors.white,
+              color: eventItemBackgroundColors != null &&
+                      eventItemBackgroundColors!.isNotEmpty
+                  ? eventItemBackgroundColors![0]
+                  : Colors.white,
             ),
           ),
         ),
