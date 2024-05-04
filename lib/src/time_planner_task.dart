@@ -94,8 +94,8 @@ class TimePlannerTask extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(top: 4, left: 6),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
+          // mainAxisAlignment: MainAxisAlignment.start,
+
           children: [
             Text(
               titleText ?? '',
