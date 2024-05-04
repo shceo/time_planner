@@ -74,7 +74,7 @@ class TimePlannerTask extends StatelessWidget {
       height: 68,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(4),
-        color: eventItemBackgroundColors?.first.withOpacity(0.2) ?? const Color(0xFF16B364).withOpacity(0.2),
+        color: eventItemBackgroundColors![0],
         border: Border(
           left: BorderSide(
             color: borderColor![0],
@@ -85,6 +85,8 @@ class TimePlannerTask extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               titleText ?? '',
