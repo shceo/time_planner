@@ -78,8 +78,9 @@ class TimePlannerTask extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: const EdgeInsets.all(16),
       width: widthTask,
-      height: 68,
+      // height: 68,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(4),
         color: eventItemBackgroundColors![0],
