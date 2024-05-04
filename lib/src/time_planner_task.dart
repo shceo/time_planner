@@ -49,21 +49,58 @@ class TimePlannerTask extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(4),
-        gradient: const LinearGradient(
-          begin: Alignment.centerLeft,
-          end: Alignment.centerRight,
-          colors: [
-            Color(0xFF0050FF),
-            Color(0xFF00FF00),
-          ],
+    return Stack(
+      children: [
+        Container(
+          padding: EdgeInsets.all(16),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(4),
+            gradient: const LinearGradient(
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
+              colors: [
+                Color(0xFF0050FF),
+                Color(0xFF00FF00),
+              ],
+            ),
+          ),
+          child: Column(
+            children: [Text('8:00 - 9:00')],
+          ),
         ),
-      ),
-      child: Column(
-        children: [Text('8:00 - 9:00')],
-      ),
+        Positioned(
+          top: 0,
+          left: 0,
+          child: Container(
+            width: 3,
+            height: double.infinity,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(4),
+              color: eventItemBackgroundColors != null && eventItemBackgroundColors!.isNotEmpty ? eventItemBackgroundColors![0] : Colors.white,
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
+
+
+
+
+// Container(
+//       decoration: BoxDecoration(
+//         borderRadius: BorderRadius.circular(4),
+//         gradient: const LinearGradient(
+//           begin: Alignment.centerLeft,
+//           end: Alignment.centerRight,
+//           colors: [
+//             Color(0xFF0050FF),
+//             Color(0xFF00FF00),
+//           ],
+//         ),
+//       ),
+//       child: Column(
+//         children: [Text('8:00 - 9:00')],
+//       ),
+//     );
