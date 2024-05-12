@@ -17,7 +17,7 @@ class TimePlannerTask extends StatelessWidget {
   final Color? color;
 
   /// This will happen when the user taps on the task, for example, show a dialog or navigate to another page
-  final Function? onTap;
+  final VoidCallback? onTap;
 
   /// Show this child on the task
   ///
@@ -67,8 +67,8 @@ class TimePlannerTask extends StatelessWidget {
     required this.titleStyle,
     required this.subTitleStyle,
     required this.thirdTitleStyle,
+    required this.onTap,
     this.color,
-    this.onTap,
     this.child,
     this.leftSpace,
     this.daysDuration,
@@ -77,39 +77,41 @@ class TimePlannerTask extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(10),
-      width: widthTask,
-      height: 80,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(4),
-        color: eventItemBackgroundColors![0],
-        border: Border(
-          left: BorderSide(
-            color: borderColor![0],
-            width: 3,
+    return InkWell(
+      child: Container(
+        padding: const EdgeInsets.all(10),
+        width: widthTask,
+        height: 80,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(4),
+          color: eventItemBackgroundColors![0],
+          border: Border(
+            left: BorderSide(
+              color: borderColor![0],
+              width: 3,
+            ),
           ),
         ),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              titleText ?? '',
-              style: titleStyle,
-            ),
-            Text(
-              subtitleText ?? '',
-              style: subTitleStyle,
-            ),
-            Text(
-              thirdSubtitleText ?? '',
-              style: thirdTitleStyle,
-            ),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                titleText ?? '',
+                style: titleStyle,
+              ),
+              Text(
+                subtitleText ?? '',
+                style: subTitleStyle,
+              ),
+              Text(
+                thirdSubtitleText ?? '',
+                style: thirdTitleStyle,
+              ),
+            ],
+          ),
         ),
       ),
     );
