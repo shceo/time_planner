@@ -299,7 +299,7 @@ class _TimePlannerState extends State<TimePlanner> {
                                                 config.cellHeight!) +
                                             config.cellHeight!,
                                         color: Colors.black12,
-                                      )
+                                      ),
                                     ],
                                   )
                               ],

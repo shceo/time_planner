@@ -20,8 +20,8 @@ class TimePlannerTime extends StatelessWidget {
       height: config.cellHeight!.toDouble() - 1,
       width: 60,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 0.0, vertical: 0.0),
-        child: setTimeOnAxis! ? Text(time!) : Center(child: Text(time!)),
+        padding: const EdgeInsets.only(top: 0, bottom: 12),
+        child: setTimeOnAxis! ? Text(time!) : Text(time!),
       ),
     );
   }
