@@ -7,7 +7,7 @@ class TimePlannerTime extends StatelessWidget {
   final String? time;
   final bool? setTimeOnAxis;
 
-  /// Show the hour for each row of time plan ner
+  /// Show the hour for each row of time planner
   const TimePlannerTime({
     Key? key,
     this.time,
@@ -21,7 +21,15 @@ class TimePlannerTime extends StatelessWidget {
       width: 60,
       child: Padding(
         padding: const EdgeInsets.only(top: 0, bottom: 12),
-        child: setTimeOnAxis! ? Text(time!) : Text(time!),
+        child: setTimeOnAxis!
+            ? Transform.translate(
+                offset: const Offset(2, -15), // смещаем текст вверх на 4 пикселя
+                child: Text(time!),
+              )
+            : Transform.translate(
+                offset: const Offset(2, -15), // смещаем текст вверх на 4 пикселя
+                child: Text(time!),
+              ),
       ),
     );
   }
