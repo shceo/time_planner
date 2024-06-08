@@ -23,11 +23,11 @@ class TimePlannerTime extends StatelessWidget {
         padding: const EdgeInsets.only(top: 0, bottom: 12),
         child: setTimeOnAxis!
             ? Transform.translate(
-                offset: const Offset(2, -15), // смещаем текст вверх на 4 пикселя
+                offset: const Offset(0, -12), // смещаем текст вверх на 4 пикселя
                 child: Text(time!),
               )
             : Transform.translate(
-                offset: const Offset(2, -15), // смещаем текст вверх на 4 пикселя
+                offset: const Offset(0, -12), // смещаем текст вверх на 4 пикселя
                 child: Text(time!),
               ),
       ),
