@@ -23,11 +23,11 @@ class TimePlannerTime extends StatelessWidget {
         padding: const EdgeInsets.only(top: 0, bottom: 12),
         child: setTimeOnAxis!
             ? Transform.translate(
-                offset: const Offset(0, -10),
+                offset: const Offset(0, -8),
                 child: Text(time!),
               )
             : Transform.translate(
-                offset: const Offset(0, -10),
+                offset: const Offset(0, -8),
                 child: Text(time!),
               ),
       ),
