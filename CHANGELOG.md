@@ -1,3 +1,8 @@
+## [0.2.0]
+- Breaking: refactored `TimePlannerTask` to render multi-line event cards with explicit text styles and configurable background/border colors, requiring callers to provide the new styling fields.
+- Adjusted hour-column text positioning in `TimePlannerTime`.
+- Added repository/issue-tracker/documentation links and platform/topic/screenshot metadata in `pubspec.yaml` for pub.dev compliance.
+
 ## [0.1.2+1]
 - Fix multi days task- [#25](https://github.com/Jamalianpour/time_planner/issues/25)
 
