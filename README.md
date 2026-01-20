@@ -32,7 +32,7 @@ You can see web demo here: [https://shceo.github.io/time_planner_demo](https://s
 
 ```yaml
 dependencies:
-  time_planner_2: ^0.2.0
+  time_planner_2: ^0.2.1
 ```
 
 ##### 2. import time planner lib
