@@ -1,7 +1,17 @@
 name: time_planner
 description: A beautiful, easy to use and customizable time planner for flutter mobile, desktop and web
 version: 0.2.0+1
+
 homepage: https://github.com/shceo/time_planner
+repository: https://github.com/shceo/time_planner
+issue_tracker: https://github.com/shceo/time_planner/issues
+documentation: https://shceo.github.io/time_planner_demo
+topics:
+  - schedule
+  - calendar
+  - planner
+  - timetable
+  - widget
 
 environment:
   sdk: ">=2.12.0 <4.0.0"
@@ -16,7 +26,22 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^1.0.0
 
-flutter:
-1.0.0
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
 
-flutter:
+screenshots:
+  - description: Mobile timetable view
+    path: screenshot/Mobile.gif
+  - description: Dark mode mobile timetable view
+    path: screenshot/darkMobile.jpg
+  - description: Desktop timetable view
+    path: screenshot/Desktop.gif
+  - description: Web timetable view
+    path: screenshot/Web.gif
+  - description: Multi-day task example
+    path: screenshot/MultiDay.png
