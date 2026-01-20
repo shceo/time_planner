@@ -24,7 +24,7 @@ Each row show an hour and each column show a day but you can change the title of
 
 ## Demo
 
-You can see web demo here: [https://jamalianpour.github.io/time_planner_demo](https://jamalianpour.github.io/time_planner_demo)
+You can see web demo here: [https://shceo.github.io/time_planner_demo](https://shceo.github.io/time_planner_demo)
 
 ## Usage
 
@@ -146,3 +146,5 @@ MaterialApp(
 Fill free to fork this repository and send pull request 🏁👍
 
 [Medium post](https://yaus.ir/4n7MeZ)
+
+Copyright (c) 2026 shceo

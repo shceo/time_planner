@@ -1,7 +1,6 @@
 name: time_planner
 description: A beautiful, easy to use and customizable time planner for flutter mobile, desktop and web
-version: 0.1.2+1
-
+version: 0.2.0+1
 homepage: https://github.com/shceo/time_planner
 
 environment:
@@ -16,5 +15,8 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^1.0.0
+
+flutter:
+1.0.0
 
 flutter:
