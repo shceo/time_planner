@@ -32,7 +32,7 @@ You can see web demo here: [https://shceo.github.io/time_planner_demo](https://s
 
 ```yaml
 dependencies:
-  time_planner_2: ^0.1.2+1
+  time_planner_2: ^0.2.0
 ```
 
 ##### 2. import time planner lib
@@ -145,6 +145,5 @@ MaterialApp(
 
 Fill free to fork this repository and send pull request 🏁👍
 
-[Medium post](https://yaus.ir/4n7MeZ)
 
 Copyright (c) 2026 shceo
