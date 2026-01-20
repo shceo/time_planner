@@ -16,11 +16,11 @@ Each row show an hour and each column show a day but you can change the title of
 
 | Mobile                           | Dark                               |
 | -------------------------------- | ---------------------------------- |
-| ![Mobile](screenshot/Mobile.gif) | ![Dark](screenshot/darkMobile.jpg) |
+| ![Mobile](https://raw.githubusercontent.com/shceo/time_planner/master/screenshot/Mobile.gif) | ![Dark](https://raw.githubusercontent.com/shceo/time_planner/master/screenshot/darkMobile.jpg) |
 
 | Desktop                            | Web                        |
 | ---------------------------------- | -------------------------- |
-| ![Desktop](screenshot/Desktop.gif) | ![Web](screenshot/Web.gif) |
+| ![Desktop](https://raw.githubusercontent.com/shceo/time_planner/master/screenshot/Desktop.gif) | ![Web](https://raw.githubusercontent.com/shceo/time_planner/master/screenshot/Web.gif) |
 
 ## Demo
 
@@ -94,7 +94,7 @@ TimePlanner(
 
 You can add multi days task with `daysDuration` minimum and default value for this argument is 1 and result look like this :
 
-![MultiDay](screenshot/MultiDay.png)
+![MultiDay](https://raw.githubusercontent.com/shceo/time_planner/master/screenshot/MultiDay.png)
 
 ### Style
 
