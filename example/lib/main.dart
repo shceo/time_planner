@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:time_planner/time_planner.dart';
+import 'package:time_planner_2/time_planner_2.dart';
 
 void main() {
   runApp(const MyApp());

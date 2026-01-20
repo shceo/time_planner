@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:time_planner/src/config/global_config.dart' as config;
-import 'package:time_planner/src/time_planner_style.dart';
-import 'package:time_planner/src/time_planner_task.dart';
-import 'package:time_planner/src/time_planner_time.dart';
-import 'package:time_planner/src/time_planner_title.dart';
+import 'package:time_planner_2/src/config/global_config.dart' as config;
+import 'package:time_planner_2/src/time_planner_style.dart';
+import 'package:time_planner_2/src/time_planner_task.dart';
+import 'package:time_planner_2/src/time_planner_time.dart';
+import 'package:time_planner_2/src/time_planner_title.dart';
 
 /// Time planner widget
 class TimePlanner extends StatefulWidget {

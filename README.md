@@ -1,7 +1,7 @@
 # Time planner
 
-<a href="https://pub.dev/packages/time_planner">
-   <img alt="Pub Version" src="https://img.shields.io/pub/v/time_planner.svg?longCache=true" />   
+<a href="https://pub.dev/packages/time_planner_2">
+   <img alt="Pub Version" src="https://img.shields.io/pub/v/time_planner_2.svg?longCache=true" />   
 </a>
 <a href="https://github.com/Solido/awesome-flutter">
    <img alt="Awesome Flutter" src="https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true" />   
@@ -32,13 +32,13 @@ You can see web demo here: [https://shceo.github.io/time_planner_demo](https://s
 
 ```yaml
 dependencies:
-  time_planner: ^0.1.2+1
+  time_planner_2: ^0.1.2+1
 ```
 
 ##### 2. import time planner lib
 
 ```dart
-import 'package:time_planner/time_planner.dart';
+import 'package:time_planner_2/time_planner_2.dart';
 ```
 
 ##### 3. use time planner
